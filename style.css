@@ -1,13 +1,14 @@
 .profile-container {
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    gap: 2rem;
 }
 
 body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-
+    background: url("./assets/background-mobile.png") no-repeat center;
 }
 
 h1 {
@@ -26,7 +27,15 @@ h2 {
     padding: 0;
 }
 
-section.description {
+main {
+    background-color: white;
+    padding: 1.5rem;
+    /* border: 1px solid darkgray; */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+main.description {
     width: 80%;
     margin: 0 auto;
 }
@@ -34,4 +43,21 @@ section.description {
 .floral-container {
     display: flex;
     gap: 2rem;
+    align-items: center;
+}
+
+.floral-container h3 {
+    color: #EC879C;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.floral-container p {
+    font-size: .9rem;
+}
+
+
+ /* desktop styles */ 
+@media (min-width: 768px) {
+
 }
