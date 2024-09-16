@@ -28,6 +28,7 @@ h1, h2 {
     display: flex;
     gap: 10px;
     padding: 0;
+    margin: 0.5rem 0;
 }
 
 header {
@@ -64,14 +65,16 @@ header .profile-image {
 
 main {
     background-color: white;
-    padding: 1.5rem;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1.5rem 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    position: relative;
+    margin-bottom: 2rem;
 }
 
 main.description {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 2.5rem;
 }
 
 .floral-container {
@@ -80,8 +83,19 @@ main.description {
     align-items: center;
 }
 
-.floral-container:first-of-type {
+.floral-container:hover {
     background-color: #FFF9F3;
+}
+
+.flip-icon {
+    background-color: #CA6D81;
+    height: 18px;
+    width: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -0.5rem;
+    right: -1rem;
 }
 
 
