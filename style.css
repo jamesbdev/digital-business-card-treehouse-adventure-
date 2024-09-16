@@ -115,6 +115,24 @@ main.description {
 
 }
 
+/* back of card */
+
+.back ul {
+    padding: 0;
+}
+
+.back ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.qr-container {
+    display: flex;
+    border: 1px solid gray;
+    padding: 1rem;
+}
+
 
  /* desktop styles */ 
 @media (min-width: 768px) {
