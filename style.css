@@ -56,10 +56,10 @@ header .profile-image {
     border-radius: 50%;
 }
 
-.social-media img:hover {
+.social-media img:hover, .social-media-list img:hover {
     transform: scale(1.1);
     transition: transform 0.4s;
-}
+}   
 
 
 .image-container {
@@ -127,7 +127,7 @@ main.description {
 /* back of card */
 
 .back {
-    display: none;
+    /* display: none; */
 }
 
 .back ul {
@@ -191,8 +191,10 @@ span.bold {
 }
 
 .qr-container img {
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 120px;
+    /* background-color: #737373; */
+    /* color: #737373; */
 }
 
 @media screen and (min-width: 750px) {
@@ -240,6 +242,16 @@ span.bold {
 
     .social-media ul {
         gap: 1rem;
+    }
+
+    .social-and-qr-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .back h4 {
+        display: none;
     }
 }
 
