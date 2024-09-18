@@ -34,6 +34,8 @@ h1, h2 {
     margin: 0.5rem 0;
 }
 
+
+
 header {
     color: #EC879C;
     padding: 2rem 0 1rem;
@@ -52,6 +54,11 @@ header .profile-image {
     width: auto;
     border: 3px solid white;
     border-radius: 50%;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s;
 }
 
 
@@ -216,6 +223,23 @@ span.bold {
 
     .front {
         display: flex;
+    }
+
+    .name-social-container {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .social-media img {
+        height: 24px;
+        width: auto;
+    }
+
+   
+
+    .social-media ul {
+        gap: 1rem;
     }
 }
 
