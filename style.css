@@ -129,6 +129,7 @@ main.description {
 .back {
     padding: 1.5rem;
     display: none;
+    background: url('./assets/background-mobile.png');
 }
 
 .back ul {
@@ -258,6 +259,11 @@ span.bold {
         display: flex;
         justify-content: space-between;
         gap: 2rem;
+    }
+
+    .back {
+        background: url('./assets/background-desktop.png');
+        border-radius: 1rem;
     }
 
     .back h4 {
