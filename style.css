@@ -1,11 +1,11 @@
 
 body {
     margin: 0;
-}
-
-.card-container {
     font-family: "Inter", sans-serif;
     font-weight: 400;
+}
+
+.card-inner {
     background: url("./assets/background-mobile.png");
 }
 
@@ -127,7 +127,8 @@ main.description {
 /* back of card */
 
 .back {
-    /* display: none; */
+    padding: 1.5rem;
+    display: none;
 }
 
 .back ul {
@@ -193,11 +194,15 @@ span.bold {
 .qr-container img {
     width: auto;
     height: 120px;
-    /* background-color: #737373; */
-    /* color: #737373; */
 }
 
-@media screen and (min-width: 750px) {
+.card-inner {
+    position: relative;
+}
+
+
+
+@media screen and (min-width: 990px) {
     .card-container {
         background: url("./assets/background-desktop.png");
         border: 2px solid white;
@@ -224,6 +229,11 @@ span.bold {
     }
 
     .front {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .front-description {
         display: flex;
     }
 
