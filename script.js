@@ -1,23 +1,23 @@
 
 
 //get the flip icon
-const flipIcon = document.querySelector('.flip-icon');
+const flipIcon = document.querySelectorAll('.flip-icon');
+
 const front = document.querySelector('.front');
 const back = document.querySelector('.back');
 
-//add click event listener 
-flipIcon.addEventListener('click', function(){
-    if (front.style.display === 'block') {
-        front.style.display = 'none';
-        back.style.display = 'block';
-    } else {
-        front.style.display = 'block';
-        back.style.display = 'none';
-    }
-    //add a class to the button 
-   
+flipIcon.forEach((icon) => {
+    icon.addEventListener('click', function() {
+        // debugger;
+        if (front.classList.contains('hide')) {
+            front.classList.remove('hide');
+            back.classList.add('hide');
+        } else {
+            front.classList.add('hide');
+            back.classList.remove('hide');
+           
+        }
+      
+    });
 });
 
-//when clicked, show the back of the card 
-
-//if the back of the card is showing, show the front of the card

@@ -5,8 +5,14 @@ body {
     font-weight: 400;
 }
 
-.card-inner {
+
+
+.card-container {
     background: url("./assets/background-mobile.png");
+    position: relative;
+    display: flex;
+    margin: 0;
+    width: 100%;
 }
 
 h1 {
@@ -49,6 +55,10 @@ header {
     position: relative;
 }
 
+.front {
+    position: relative;
+}
+
 header .profile-image {
     height: 86px;
     width: auto;
@@ -84,6 +94,7 @@ main {
 main.description {
     width: 80%;
     margin: 0 auto 2.5rem;
+    position: relative;
 }
 
 .floral-container {
@@ -128,7 +139,6 @@ main.description {
 
 .back {
     padding: 1.5rem;
-    display: none;
     background: url('./assets/background-mobile.png');
 }
 
@@ -199,6 +209,7 @@ span.bold {
 
 .card-inner {
     position: relative;
+    border-radius: 15px;
 }
 
 
@@ -263,12 +274,18 @@ span.bold {
 
     .back {
         background: url('./assets/background-desktop.png');
-        border-radius: 1rem;
+        /* border-radius: 13rem; */
     }
 
     .back h4 {
         display: none;
     }
+}
+
+/* helper class */
+
+.hide {
+    display: none;
 }
 
 
