@@ -90,7 +90,6 @@ main {
     border-radius: 15px;
     position: relative;
     margin-bottom: 2rem;
-    /* width: 100%; */
 }
 
 main.description {
@@ -278,7 +277,6 @@ span.bold {
 
     .back {
         background: url('./assets/background-desktop.png');
-        /* border-radius: 13rem; */
     }
 
     .back h4 {
