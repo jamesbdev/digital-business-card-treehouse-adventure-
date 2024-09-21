@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: "Inter", sans-serif;
     font-weight: 400;
+    min-height: 100vh;
 }
 
 
@@ -51,7 +52,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 2.4rem;
     position: relative;
 }
 
@@ -84,15 +85,16 @@ header .profile-image {
 
 main {
     background-color: white;
-    padding: 1.5rem 1.5rem 3rem;
+    padding: 1.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     position: relative;
     margin-bottom: 2rem;
+    /* width: 100%; */
 }
 
 main.description {
-    width: 80%;
+    width: 76%;
     margin: 0 auto 2.5rem;
     position: relative;
 }
@@ -101,6 +103,7 @@ main.description {
     display: flex;
     gap: 2rem;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 
 .floral-container:hover {
@@ -132,7 +135,7 @@ main.description {
 
 .floral-container p {
     font-size: .9rem;
-
+    color: #737373;
 }
 
 /* back of card */
@@ -175,7 +178,8 @@ main.description {
     gap: 1.5rem;
     border-radius: 10px;
     box-sizing: border-box;
-    overflow-wrap: break-word
+    overflow-wrap: break-word;
+    margin-bottom: 1.5rem;
 }
 
 .back p.description {
@@ -204,7 +208,7 @@ span.bold {
 
 .qr-container img {
     width: auto;
-    height: 120px;
+    height: 59px;
 }
 
 .card-inner {
@@ -279,6 +283,10 @@ span.bold {
 
     .back h4 {
         display: none;
+    } 
+
+    .qr-container img {
+        height: 100px;
     }
 }
 
